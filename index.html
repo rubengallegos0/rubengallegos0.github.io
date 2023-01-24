@@ -1,0 +1,39 @@
+<!DOCTYPE html>                                          <!-- Visuales de mi pagina web -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Challenge 1</title>                                                          <!-- titulo pagina web -->
+        <link rel="stylesheet" href="Style_challenge1.css">
+        <script type="text/javascript" src="Scritp_challenge1.js"></script>                  <!-- JS para ejecutar el enciptador -->
+    </head>
+    <body>
+        <div class="container">                                                              <!-- Contenedor General - Azul -->
+            <div class="logo">                                                               <!-- Espacio para el logo  -->
+                <img class="logoIgm" src="Vector.png">   
+                <div class="tittle">
+                    <span>Encriptador</span>
+                    <span>Encriptador</span> 
+                </div>                     
+            </div>            
+            <div class="left">
+                <input class="textInput" id="inputTexto" type="text" placeholder="Ingrese el texto aqui">    <!-- Recuadro para escribir con texto de fondo  -->
+                
+            </div>
+            <div class="rigth"> 
+                <img src="Muneco.svg" id="imagenDer">     
+                <div class="dots-1"></div>                                                  <!-- Imagen Muñeco  -->
+                <h1 id="texto">Ningun mensaje fue encontrado</h1>                                                      
+                <textarea id="texto2" name="name" rows="8" cols="40">Ingrese el texto que desees desesncriptar.</textarea>
+                <button id="copiar" type="button" onclick="copiar()">¡Copiar!</button>          
+            </div>                           <!-- onclick - cuando haces click en el boton, te llama a la funcion que creaste en JS  -->
+            <div class="left-button">
+                <p class="minusculas">🛈 Solo minusculas y sin acentos</p>
+                <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+            <footer id="creado">
+                <p class="Copyright">&copy Copyright Rubén Gallegos 2023 </p> <!-- FOOTER PARA LA INFORMACION DEL CREADOR  -->
+            </footer>
+        </div>  
+    </body>
+    </html>
