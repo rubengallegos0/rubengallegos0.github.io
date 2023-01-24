@@ -1,0 +1,204 @@
+                                            /* Ediciones de mi pagina web */
+
+body{
+    margin: 0px;                            /* Margen */
+    padding: 0px;                           /* Espacio interno */
+    background: url();               /* Fondo */
+}
+.container{
+    margin: auto;                           /* Margen */
+    width: 960px;                           /* Ancho */
+    height: 600px;                          /* Alto */
+    padding: 5px;                           /* Espacio interno */
+    /* background: url("fondowebcandado.webp");                      Fondo */
+}
+.logo{
+    width: 100%;                            /* Ancho de la imagen - el % es par ajustar la pantalla*/
+    float: left;                            /* Imagen flotante para poder moverse */
+    /*background: url(luces.gif)*/
+}
+.left{                                      /* Contenedor Izquierdo */
+    float: left;                            /* Imagen flotante para poder moverse */
+    width: 70%;                             /* Ancho de la imagen - el % es par ajustar la pantalla*/
+    height: 70%;                           /* Altura que de pantalla en automatico*/
+    border-radius: 24px;                    /* Borde redondo para las esquinas*/
+    /* background: yellow; */
+}
+.rigth{                                     /* Contenedor Derecho */
+    float: right;                            /* Imagen flotante para poder moverse */
+    width: 30%;                             /* Ancho de la imagen - el % es par ajustar la pantalla*/
+    height: auto;                           /* Altura que de pantalla en automatico*/
+    border-radius: 24px;                    /* Borde redondo para las esquinas*/
+    background: white;
+}
+.left-button{                                /* Espacio izquierdo para creaar los botones */
+    float: left;
+    width: 70%;
+    height: auto;
+    border-radius: 24px;
+    /* background: pink; */
+}
+.logoIgm{                                    /* Imagen Alura */
+    margin-top: 1%;                         
+    float: inherit;
+    margin-left: 5%;                        
+}
+.tittle span {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 210px;
+    margin-top: 50px;
+    position: absolute;
+    color: #fff;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+}
+.tittle span:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 0.3px #0A3871;
+}
+
+.tittle span:nth-child(2) {
+    color: rgb(21, 71, 112);
+    -webkit-text-stroke: 1px #0A3871;
+    animation: animation 3s ease-in-out infinite;
+}
+@keyframes animation {
+    0%, 100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+.textInput{                                 /* Espacio para escribir */
+    float: left;                            /* Imagen flotar en la izquierda */
+    margin-left: 10%;                       /* Margen izquierdo del 10% */
+    margin-top: 10%;                        /* Margen superior del 10% */
+    width: 80%;                             /* Ancho del la imgagen del 80% de su cuadro */
+    height: 80%;                            /* Alto del la imgagen del 80% de su cuadro */
+    color: #0A3871;                       /* Color de la letra */
+    font-size: 20px;                        /* Tamaño de la letra */
+    border: none;                           /* Eliminar margen */
+    outline: none;                          /* Eliminar margen al dar clik*/
+    background: #F3F5FC
+}
+#imagenDer{                                 /* Muñeco */
+    margin-left: 5%;
+    margin-top: 20%;
+    width: 90%;
+    height: auto;
+}
+#texto{                                      /* Texto 1 debajo del muñeco */
+    margin-left: 10%;
+    margin-right: 5%;
+}
+#texto2{                                     /* Texto 2 debajo del muñeco */
+    float: left;
+    margin-left: 10%;
+    color: #0a3871;
+    width: 80%;
+    height: 60%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+#btn-encriptar{                              /* Boton Encriptar */
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    margin-left: 15%;
+    font-size: 20px;
+}
+#btn-encriptar:hover{
+    border-color: #ee8002;
+}
+#btn-encriptar:active{
+    border-color: #ee8002;
+} 
+#btn-desencriptar{                          /* Boton Desncriptar */
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    margin-left: 10%;
+    font-size: 20px;
+}
+#btn-desencriptar:hover{
+    border-color: #ee8002;
+}
+/*  #btn-desencriptar:active{
+    border-color: #ffffff;
+} */
+
+#copiar{                                    /* Boton Copiar */
+    margin-left: 20%;
+    margin-top: 90%;
+    padding: 24px;
+    width: 40%;
+    height: 10%;
+    background: #d8dfe8;
+    border-radius: 24px;
+    display: none;                          /* Ocultar el boton */
+    font-size: 15px;
+}
+#copiar:hover{
+    border-color: #ee8002;
+}
+#copiar:active{
+    border-color: #ffffff;
+} 
+#creado{
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+ }
+.Copyright{
+    font-size: 15px;
+ margin-top: 0%;
+ margin-left: 30%;
+    padding: 0%;
+
+}
+.dots-1 {
+    margin-left: 40%;
+    width: 70px;
+    aspect-ratio: 7;
+    background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: d1 1s steps(4) infinite;
+  }
+  @keyframes d1 {to{clip-path: inset(0 -34% 0 0)}}
+
+  button {
+    background: transparent;
+    color: #1659ac;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 16px 26px;
+    border: 2px solid #1659ac;
+    border-radius: 32px;
+    transform: translate(0);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  button::before {
+    content: "";
+    position: absolute;
+    background: #ee8002;
+    width: 8px;
+    top: 0;
+    bottom: 0;
+    left: -32px;
+    transform: rotate(-16deg);
+    filter: blur(6px);
+  }
+  button:hover::before {
+    left: calc(100% + 32px);
+    transition: 0.75s;
+  }
+  .minusculas{
+    margin-left: 10%;
+  }
